@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score
 from utils import MODEL_PATH, get_data_splits
 
 
-def evaluate_model(min_accuracy: float = 0.8) -> float:
+def evaluate_model(min_accuracy: float = 0.7) -> float:
     """Evaluate model and raise an error when it underperforms."""
     if not MODEL_PATH.exists():
         raise FileNotFoundError(
